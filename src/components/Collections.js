@@ -184,7 +184,6 @@ class Collections extends Component {
     this.setState({
       collectionsData: currentData
     });
-
   }
 
 
@@ -200,7 +199,6 @@ class Collections extends Component {
     this.setState({
       collectionsData: data
     });
-
   }
 
   
@@ -221,8 +219,7 @@ class Collections extends Component {
     } 
 
 
-    return (
-        
+    return ( 
       <Container>
         <Row>
           <Col xs="0" sm="1" md="2" lg="3"></Col>
@@ -262,8 +259,7 @@ class Collections extends Component {
                             </div>
                           }
                         </li>
-                      ))
-                  }
+                  ))}
                   {!isAdding && 
                     <div className="buttonBox">
                       <Button color="link" onClick={this.handleAddNewClick} className="createNewButton">+ Add New Collection</Button>
