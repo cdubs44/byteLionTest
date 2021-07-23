@@ -1,5 +1,52 @@
+
+/* ICON SETTINGS HERE */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./fonts/icomoon.eot?cigm8i');
+  src:  url('./fonts/icomoon.eot?cigm8i#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?cigm8i') format('truetype'),
+    url('./fonts/icomoon.woff?cigm8i') format('woff'),
+    url('./fonts/icomoon.svg?cigm8i#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 20px;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check-circle:before {
+  content: "\e900";
+}
+.icon-edit-2:before {
+  content: "\e901";
+}
+.icon-settings:before {
+  content: "\e902";
+}
+.icon-trash-2:before {
+  content: "\e903";
+}
+.icon-user:before {
+  content: "\e904";
+}
+/* END OF ICON SETTINGS */
+
 .App {
   text-align: center;
+  margin: 0px 15px 0px 15px;
 }
 
 .App-logo {
@@ -35,4 +82,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.myIcons{
+  display: flex;
+  background-color: #F5F5F5;
+  border: 1px solid #D7D7D7;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+a{
+  color: #4F4CCF !important;
+}
+
+.nav-link{
+  margin: 3px 7px;
+}
+
+.MySticky {
+  position: fixed;
+  top: 10px;
+  right: 20px;
 }
